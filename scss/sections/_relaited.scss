@@ -1,0 +1,79 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.sidebar-background {
+  background-color: #aea4a43b;
+  @include radius;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar-related-all {
+  .sidebar-title {
+    h3 {
+      border-left: 4px solid $orange;
+      margin-left: 80px;
+      text-align: start;
+      padding-left: 12px;
+      @include radius;
+    }
+  }
+  .sidebar-related {
+    .sidebar-related-img {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin-right: 10px;
+      img {
+        vertical-align: middle;
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+        @include radius;
+      }
+    }
+    &:hover .sidebar-related-img > img {
+      transform: scale(1.05);
+      transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+    }
+    .sidebar-related-content {
+      a {
+        text-shadow: 1px 1px 10px #777777;
+      }
+      .sidebar-related-footer {
+        color: $orange;
+        i {
+          font-size: 18px;
+        }
+        img {
+          height: 100%;
+          padding-top: 5px;
+        }
+        p {
+          padding-left: 5px;
+        }
+      }
+      .relaited-blog {
+        p {
+          color: $orange !important;
+        }
+      }
+      .related-course {
+        color: $orange !important;
+
+        p {
+          font-size: 25px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}

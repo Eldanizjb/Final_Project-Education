@@ -1,0 +1,62 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.section-programs {
+  z-index: 6;
+  .programs-title {
+    h2 {
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+    }
+  }
+  .programs-card {
+    @include radius;
+    .programs {
+      border: 0px solid !important;
+      .img-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        @include radius;
+
+        img {
+          max-width: 90%;
+          padding: 10px 0px;
+        }
+      }
+      .card-body {
+        text-align: center;
+
+        a {
+          @include TextFont;
+          text-transform: uppercase;
+          font-weight: 700;
+          cursor: pointer;
+          i {
+            color: $badge;
+          }
+        }
+      }
+    }
+    &:hover .img-section > img {
+      transform: scale(1.05);
+      transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+    }
+    &:hover .img-section {
+      border: 3px solid $orange;
+    }
+    &:hover .card-body > a {
+      color: $orange !important;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}

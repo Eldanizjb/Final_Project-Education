@@ -1,0 +1,53 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.section-subscribe {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .outer-box {
+    position: relative;
+    background-color: $blue;
+    padding: 40px 50px 11px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -80px;
+    @include radius;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+      border-top-left-radius: 10px;
+    }
+    .title-column {
+      .header {
+        color: $white;
+        z-index: 3;
+      }
+    }
+    .subscribe-form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-end;
+      justify-content: center;
+      .button {
+        width: 200px;
+        height: 50px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}

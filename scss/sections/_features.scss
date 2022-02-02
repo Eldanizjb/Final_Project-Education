@@ -1,0 +1,83 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.section-feature {
+  position: relative;
+  background-color: $badge;
+  overflow: hidden;
+  .feature-all {
+    .featute-left {
+      color: $white !important;
+
+      h1 {
+        padding-top: 50px;
+        color: $white !important;
+      }
+
+      .right-featute-box {
+        .right-featute-image {
+          width: 90px;
+          height: 90px;
+          border-radius: 14px;
+          img {
+            vertical-align: middle;
+            object-fit: cover;
+            max-width: 50%;
+            max-height: 50%;
+            text-align: center;
+            border-radius: 10px;
+          }
+        }
+        .bg-colors1 {
+          background-color: $blue-500;
+        }
+        .bg-colors2 {
+          background-color: $pink-500;
+        }
+        .bg-colors3 {
+          background-color: $indigo-500;
+        }
+        .featute-content {
+          margin-left: 20px;
+          h3 {
+            color: $white;
+          }
+          p {
+            color: $white;
+          }
+        }
+      }
+    }
+    .right-featute-box:hover img {
+      transform: rotateY(360deg);
+      transition: all 0.3s cubic-bezier(0.9, 0.5, 1, 1) 0s;
+    }
+  }
+  .featute-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+  .featute-right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .featute-right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .featute-right {
+    display: none;
+  }
+}

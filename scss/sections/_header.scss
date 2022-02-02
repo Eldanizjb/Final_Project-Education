@@ -1,0 +1,63 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+body {
+}
+
+.section-header {
+  .header-top {
+    background-color: $badge;
+    .header-contact {
+      .header-locations {
+        .location-icon {
+          i {
+            color: $orange;
+            line-height: unset !important;
+          }
+        }
+        .location-text {
+          a {
+            p {
+              padding-left: 10px;
+              color: $white !important;
+            }
+          }
+        }
+      }
+      .header-mail {
+        .mail-icon {
+          i {
+            color: $orange;
+            line-height: unset !important;
+            padding-left: 10px;
+          }
+        }
+        .mail-text {
+          a {
+            p {
+              padding-left: 10px;
+              color: $white !important;
+            }
+          }
+        }
+      }
+    }
+    .header-social {
+      a {
+        i {
+          padding-left: 10px;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}

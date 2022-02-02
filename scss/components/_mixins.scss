@@ -1,0 +1,161 @@
+//Gradients Mixins
+@use "../custom" as *;
+
+@mixin gradient {
+  background: linear-gradient(
+    to right,
+    rgba($badge, 0.15),
+    rgba($orange, 0.15)
+  );
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin HeaderFont {
+  font-weight: 900;
+  color: $badge;
+  font-size: 50px;
+}
+
+@mixin HeaderUppercaseFont {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $blue;
+  font-size: 30px;
+  line-height: 80px;
+}
+
+@mixin TitleFont {
+  font-size: 25px;
+  color: $badge;
+  line-height: 35px;
+  font-weight: 800;
+}
+
+@mixin TextFont {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  margin-bottom: 12px;
+  color: $gray !important;
+}
+
+@mixin SpanFont {
+  font-size: 20px;
+  font-weight: 500;
+  color: $gray !important;
+}
+
+@mixin radius {
+  border-radius: 10px;
+}
+
+@mixin radiusTop {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@mixin fontJost {
+  font-family: "Jost", sans-serif;
+}
+@mixin fontRoboto {
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin shadow {
+  box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 20%);
+}
+
+//responsive
+
+@media only screen and (max-width: 1200px) {
+  @mixin HeaderFont {
+    font-size: 60px !important;
+  }
+
+  @mixin HeaderUppercaseFont {
+    font-size: 40px !important;
+  }
+
+  @mixin TitleFont {
+    font-size: 35px !important;
+  }
+
+  @mixin TextFont {
+    font-size: 25px !important;
+  }
+
+  @mixin SpanFont {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  @mixin HeaderFont {
+    font-size: 50px !important;
+  }
+
+  @mixin HeaderUppercaseFont {
+    font-size: 30px !important;
+  }
+
+  @mixin TitleFont {
+    font-size: 25px !important;
+  }
+
+  @mixin TextFont {
+    font-size: 15px !important;
+  }
+
+  @mixin SpanFont {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  @mixin HeaderFont {
+    font-size: 40px !important;
+  }
+
+  @mixin HeaderUppercaseFont {
+    font-size: 20px !important;
+  }
+
+  @mixin TitleFont {
+    font-size: 15px !important;
+  }
+
+  @mixin TextFont {
+    font-size: 13px !important;
+  }
+
+  @mixin SpanFont {
+    font-size: 13px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  @mixin HeaderFont {
+    font-size: 30px !important;
+  }
+
+  @mixin HeaderUppercaseFont {
+    font-size: 15px !important;
+  }
+
+  @mixin TitleFont {
+    font-size: 10px !important;
+  }
+
+  @mixin TextFont {
+    font-size: 10px !important;
+  }
+
+  @mixin SpanFont {
+    font-size: 10px !important;
+  }
+}

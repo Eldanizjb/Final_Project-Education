@@ -1,0 +1,76 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.section-faq {
+  .accordion {
+    h2 {
+      text-align: center;
+    }
+    h1 {
+      font-size: 50px !important;
+      text-align: center;
+      padding-right: 0;
+      margin-bottom: 50px;
+    }
+
+    .accordion-side {
+      .accordion-item {
+        margin-bottom: 30px;
+        border: 0px;
+        background-color: whitesmoke;
+        border-radius: 18px;
+        .accordion-header {
+          border-radius: 20px !important;
+          @include shadow;
+          .accordion-button {
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 0;
+            height: 50px;
+            span {
+              position: absolute;
+              color: #fff;
+              top: 0;
+              right: 0;
+              width: 60px;
+              height: 100%;
+              background: #ff5219;
+              border-radius: 0 8px 8px 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 30px;
+              i {
+                position: relative;
+                color: #fff;
+
+                z-index: 1;
+              }
+            }
+            &:not(.collapsed) span > i {
+              transform: rotate(-90deg);
+              transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+
+              .accordion-button::after {
+                display: none !important;
+              }
+            }
+            &::after {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}

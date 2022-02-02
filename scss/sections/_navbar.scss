@@ -1,0 +1,70 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.menu {
+  // @include gradient;
+  //   position: -webkit-sticky;
+  //   position: sticky;
+  background: none;
+  z-index: 6000;
+  transition: 0.4s;
+  top: 25px;
+  margin: 0 auto;
+
+  li {
+    padding: 0px !important;
+    a {
+      color: $badge !important;
+      text-transform: capitalize;
+      font-weight: 600;
+      padding-top: 18px !important;
+    }
+    .secondLi a {
+      color: $orange !important;
+    }
+  }
+}
+
+.menu ul li ul.dropdown-menu li a:hover {
+  color: $orange !important;
+  transition: 0.3s;
+}
+
+.menu ul li.nav-item:hover > a,
+.menu ul li a:hover,
+.menu ul li.active > a {
+  color: $orange !important;
+}
+
+.menu ul li.nav-item:hover > a,
+.menu ul li a:hover,
+.menu ul li.active > a,
+.menu ul li.nav-item:hover > a:before,
+.menu ul li a:hover:before,
+.menu ul li.active > a:before,
+.menu ul li ul.dropdown-menu li a:hover {
+  color: $orange !important;
+  border-bottom: 2px solid $orange;
+}
+.navbar-toggler {
+  background-color: $orange !important;
+}
+.navbar-toggler-icon {
+  color: $white !important;
+}
+.active-color {
+  color: $orange !important;
+}
+
+.stickyStyle {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  background-color: $white;
+  @include shadow;
+  opacity: 0.9 !important;
+}
+
+.navbar-toggler {
+  float: right !important;
+}

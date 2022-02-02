@@ -1,0 +1,51 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.sectionCompanies {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 9;
+  margin-top: 30px;
+  .container {
+    position: relative;
+    .sliderCompanies {
+      position: absolute;
+      top: -49px;
+      background-color: $blue;
+      @include radius;
+      z-index: 9;
+    }
+    .slide_item {
+      display: inline-block;
+      height: 100px;
+      padding: 25px;
+      img {
+        padding-top: 12px;
+      }
+    }
+    .sliderBackground {
+      position: absolute;
+      top: -32px;
+      width: 98%;
+      left: 11px;
+      background-color: #ff0003;
+      height: 100px;
+      box-sizing: border-box;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 10px;
+      z-index: 8;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}

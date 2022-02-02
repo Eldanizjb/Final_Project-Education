@@ -1,0 +1,163 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.instructor-detail-info-img-box {
+  padding: 20px;
+  position: relative;
+
+  .info-img-box-first {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170px;
+    height: 170px;
+    background-color: $orange;
+    @include radius;
+    @include shadow;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  .info-img-box-second {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 170px;
+    height: 170px;
+    background-color: $blue;
+    @include radius;
+    @include shadow;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  .instructor-detail-page-img {
+    display: block;
+    overflow: hidden;
+    @include radius;
+    img {
+      width: 100%;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+  }
+  &:hover .instructor-detail-page-img img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  &:hover .info-img-box-first {
+    transform: rotateY(180deg);
+    background-color: #0060ff !important;
+  }
+  &:hover .info-img-box-second {
+    transform: rotateY(180deg);
+    background-color: #ff5219 !important;
+  }
+}
+
+.instructor-informations {
+  .instructor-admin {
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    .instructor-name {
+      h3 {
+        font-size: 50px !important;
+      }
+    }
+    .instructor-stars {
+      p {
+        text-align: center;
+      }
+    }
+    .instructor-sosials {
+      a {
+        color: $badge;
+        padding: 0 5px;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .courses-title {
+    h3 {
+      font-size: 50px !important;
+    }
+  }
+  .courses-list {
+    .card-home {
+      box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%);
+      width: 22rem;
+      @include radius;
+      .img-section {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        .card-img-top {
+          border-radius: 8px 8px 0 0;
+          width: 100%;
+        }
+        .cbtn-1 {
+          position: absolute;
+          left: 20;
+          top: 180px;
+        }
+        .cbtn-2 {
+          position: absolute;
+          right: 20px;
+          top: 180px;
+        }
+      }
+      .card-body {
+        .teacher-course {
+          .teacher {
+            img {
+              vertical-align: middle;
+              object-fit: cover;
+              max-width: 100%;
+              max-height: 100%;
+              border-radius: 100%;
+              border: 4px solid white;
+              @include shadow;
+            }
+            .user {
+              @include TextFont;
+            }
+          }
+        }
+        .course-counts {
+          .course-pricing {
+            display: flex;
+            .dollar {
+              @include TextFont;
+            }
+          }
+          .course-admin {
+          }
+        }
+      }
+      &:hover .img-section > img {
+        transform: scale(1.05);
+        transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+      }
+      &:hover .card-title {
+        color: $orange;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}

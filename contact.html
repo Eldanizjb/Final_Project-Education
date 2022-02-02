@@ -1,0 +1,379 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodeCampBaku</title>
+    <!--Link CSS file-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Link Bootstrap file-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Link Fontawesome-->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!--Link Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- CSS Link Plagins for videos Into Pages-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- two links for fonts Roboto and Jost-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- two links for owl-carousel-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css ">
+</head>
+
+
+<body class="hidden">
+    <!-- Preloader -->
+    <div id="onload" class="centrado">
+        <p class="content">Loading...</p>
+
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!--!--!--section header--!--!--!-->
+    <header id="header" class="section-header">
+        <div class="header-top" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-8 col-sm-12 col-12">
+                        <div class="header-contact d-flex ">
+                            <div class="header-locations d-flex">
+                                <div class="location-icon ">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                </div>
+                                <div class="location-text ">
+                                    <a href="#" title="location">
+                                        <p class="content">12/7 Aabot, Poor Street, Mumbai</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-mail d-flex ">
+                                <div class="mail-icon">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <div class="mail-text">
+                                    <a href="#" title="mail">
+                                        <p class="content">info@gmail.com</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12 col-12">
+                        <div class="header-social">
+                            <a href="#" title="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i> </i></a>
+                            <a href="#" title="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" title="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" title="pinterest"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <nav id="sticky" class="header-nav navbar navbar-expand-lg menu  ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/icons/logo.png" alt="logo_banner">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item secondLi">
+                        <a class="nav-link active active-color" href="about.html">About Us </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="course.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="course.html">Courses List</a></li>
+                            <li><a class="dropdown-item" href="course-details.html">Courses Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="course.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Events
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="event.html">Event List</a></li>
+                            <li><a class="dropdown-item" href="event-detail.html">Event Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="instructor.html">Instructor</a></li>
+                            <li><a class="dropdown-item" href="instructor-detail.html">Instructor Detail</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Frequently Asked Questions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="blog.html">Blog List</a></li>
+                            <li><a class="dropdown-item" href="blog-detail.html">Blog Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <a href="course-details.html" class="button btn-1">Try For Free</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--!--!--section Intro--!--!--!-->
+    <section id="banner" class=" section-banner">
+        <span class="animation animation-1">
+            <img src="assets/images/animations/shape-1.png" alt="">
+        </span>
+        <span class="animation animation-2">
+            <img src="assets/images/animations/shape-2.png" alt="">
+        </span>
+        <span class="animation animation-3">
+            <img src="assets/images/animations/shape-3.png" alt="">
+        </span>
+        <span class="animation animation-4">
+            <img src="assets/images/animations/shape-4.png" alt="">
+        </span>
+        <span class=" animation-5"></span>
+        <span class=" animation-6"></span>
+        <div class="container banner-title d-flex justify-content-center">
+            <div class="row">
+                <div class=" col-lg-12 intro d-flex flex-column justify-content-center">
+                    <h1 class="header">Contact Us</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--!--!--section categories--!--!--!-->
+    <section id="breadcrum" class="section-breadcrum">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 d-flex flex-wrap-nowrap justify-content-center">
+                    <div class="banner-breadcrum ">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="index.html" title="Home">Home</a></li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                            <li><a href="pricing.html" title="Contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section-contact mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12 col-12 contact-left-side d-flex">
+                    <div class="contact-box p-5">
+                        <h3 class="header">Contact Detail</h3>
+                        <p class="content">Give us a call or drop by anytime, we endeavour to answer all enquiries
+                            within 24 hours on
+                            business days. We will be happy to answer your questions.</p>
+                        <ul class="user-contact ps-0 pt-5">
+                            <li class="user-contact-list contact-address d-flex mb-3">
+                                <div class="user-contact-img"> <img src="assets/images/icons/contact-location.png"
+                                        alt=""></div>
+                                <div class="user-contact-content">
+                                    <h3 class="title">Our Address:</h3>
+                                    <p class="content">411 University St, Seattle, USA</p>
+                                </div>
+                            </li>
+                            <li class="user-contact-list contact-email d-flex mb-3">
+                                <div class="user-contact-img"> <img src="assets/images/icons/contact-mail.png" alt="">
+                                </div>
+                                <div class="user-contact-content">
+                                    <h3 class="title">Our mailbox:</h3>
+                                    <p class="content">info@educater.com</p>
+                                </div>
+                            </li>
+                            <li class="user-contact-list contact-phone d-flex mb-3">
+                                <div class="user-contact-img"> <img src="assets/images/icons/contact-call.png" alt="">
+                                </div>
+                                <div class="user-contact-content">
+                                    <h3 class="title">Our Phone:</h3>
+                                    <p class="content">+1 -800-456-478-23</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <span class="contact-animation contact-animation--contact-1"></span>
+                        <span class="contact-animation contact-animation--contact-2"></span>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12 col-12 contact-right-side">
+                    <h2 class="headerBlue">Get in Touch</h2>
+                    <h1 class="header">Ready To Get Started</h1>
+                    <div class="contact-submit-form">
+                        <form>
+                            <div class="form-box">
+                                <input type="text" name="Full Name" class="form-input" placeholder="Full Name"
+                                    required="">
+                            </div>
+                            <div class="form-box">
+                                <input type="email" name="EmailAddress" class="form-input" placeholder="Email Address"
+                                    required="">
+                            </div>
+                            <div class="form-box">
+                                <input type="text" name="Phone No" class="form-input" placeholder="Phone No."
+                                    required="">
+                            </div>
+                            <div class="form-box">
+                                <textarea class="form-input" placeholder="Message..."></textarea>
+                            </div>
+                            <div class="form-box">
+                                <a href="#" type="submit" class="button btn-1">Submit Now</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-map" class="section-contact-map ">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2639.711861524853!2d49.85172681493181!3d40.37719806596754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d077c61fef3%3A0xfa4594c97092ca01!2sAF%20Business%20House!5e1!3m2!1sen!2sus!4v1643432507953!5m2!1sen!2sus"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!--!--!--section subscribe--!--!--!-->
+    <section id="subscribe" class="section-subscribe">
+        <div class="container">
+            <div class="outer-box">
+                <img src="assets/images/icons/cta-bg-img.png" alt="">
+                <div class="row">
+                    <div class="title-column col-lg-9 col-md-12 col-sm-12 col-12 ">
+                        <h1 class="header">Start Your Best Online Classes With Us</h1>
+                    </div>
+                    <div class="subscribe-form col-lg-3 col-md-12 col-sm-12 col-12">
+                        <a href="#" class="button btn-1">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--!--!--section footer--!--!--!-->
+    <section id="footer" class="section-footer bg-gradient ">
+        <div class="footer-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 footer-about-sosials">
+                        <div class="fooret-logo">
+                            <img src="assets/images/icons/logo-footer.png" alt="">
+                        </div>
+                        <p class="content">Duis a tempor magna. Maecenas ligula felis, imperdiet quis arcu eget, blandit
+                            ultricies
+                            risus. Vivamus
+                            fringilla urna vel risus congue accumsan.</p>
+                        <div class="footer-sosials">
+                            <a href="#" title="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" title="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" title="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" title="youtube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 first-links">
+                        <h3 class="title">Our Link</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 second-links">
+                        <h3 class="title">Other Link</h3>
+                        <ul>
+                            <li><a href="#">Instructor</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Event</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Term & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 fooret-subscribe">
+                        <h3 class="title">Subscribe Now</h3>
+                        <div class="footer-subscribe-form">
+                            <input type="email" name="email" class="form-input subscribe-input"
+                                placeholder="Email Address" required="">
+                            <button type="submit" class="sec-btn" title="Subscribe"><i class="fa fa-paper-plane"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span class="copyright-text">Copyright &copy; 2022 <a href="#">CodeAcademy.</a> All rights
+                            reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#" id="top" class="top-btn" style="display: block;">
+        <div class="Up-btn-cickle">
+            <i class="fas fa-book-reader"></i>
+        </div>
+        <span class="top-btn-text">Up</span>
+    </a>
+    <!-- Js Link Plagins for videos Into Pages-->
+    <script src="assets/vendors/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            href: "https://www.youtube.com/watch?v=ZN615Fm1PKY",
+            type: "video",
+            source: "youtube", //vimeo, youtube or local
+            width: 900,
+        });
+    </script>
+    <!--Link Bootstrap Bundle with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- two links for owl-carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

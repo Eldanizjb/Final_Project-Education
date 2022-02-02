@@ -1,0 +1,669 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.button {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: $white !important;
+  height: 60px;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.9, 0.52, 1, 1) 3s;
+  position: relative;
+  z-index: 1;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  z-index: -5;
+  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+.button:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  right: 0px;
+  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+.button:hover.button::after {
+  box-shadow: 0px 10px 24px 0px rgb(5, 13, 54, 0.2);
+}
+
+//buttons with change colors
+// color:orange
+.btn-1 {
+  background-color: $orange;
+}
+.btn-1::before {
+  background-color: $badge;
+}
+
+.btn-1:hover.btn-1::after {
+  background-color: $orange;
+}
+
+//color:badge
+.btn-2 {
+  background-color: $badge;
+}
+.btn-2::before {
+  background-color: $orange;
+}
+
+.btn-2:hover.btn-2::after {
+  background-color: $badge;
+}
+
+a {
+  .linkbutton {
+    width: 320px;
+    z-index: 6;
+    border-radius: 10px;
+    z-index: 8;
+    position: absolute;
+    box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    h4 {
+      color: $badge;
+    }
+    span {
+      color: $badge;
+    }
+  }
+}
+a {
+  .lbtn-1 {
+    top: 200px;
+    left: 100px;
+    animation: lbtn-1 3s alternate cubic-bezier(0.895, 0.03, 0.685, 0.22)
+      infinite;
+  }
+}
+a {
+  .lbtn-2 {
+    top: 300;
+    right: 0px;
+    animation: lbtn-2 3s alternate cubic-bezier(0.895, 0.03, 0.685, 0.22)
+      infinite;
+
+    .title {
+      font-size: 20px !important;
+    }
+  }
+}
+a {
+  .lbtn-3 {
+    top: 400px;
+    left: 121px;
+    animation: lbtn-3 3s alternate cubic-bezier(0.895, 0.03, 0.685, 0.22)
+      infinite;
+  }
+}
+
+.lbtn-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+}
+.circle {
+  display: flex !important;
+  align-content: center !important;
+  flex-direction: column !important;
+  justify-content: space-evenly !important;
+}
+.img1 {
+  background-color: $crimson;
+}
+.img2 {
+  background-color: $blueviolet;
+}
+.img3 {
+  background-color: $chartreuse;
+}
+
+.cbtn-1 {
+  color: $white !important;
+  background-color: $orange !important;
+  display: inline-block;
+}
+
+.cbtn-2 {
+  color: $white !important;
+  display: inline-block;
+  background-color: $blue !important;
+}
+
+.search-group {
+  width: 295px;
+  height: 56px;
+  box-shadow: 10px 10px 38px 0px rgb(0 0 0 / 11%);
+  input {
+    height: 100%;
+    width: 239px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  button {
+    margin-left: -5px;
+    height: 100%;
+    width: 56px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: $orange;
+    span {
+      font-size: 17px !important;
+    }
+  }
+}
+
+.select-column {
+  select {
+    height: 46px;
+    width: 220px;
+    border-radius: 10px;
+    option {
+    }
+  }
+}
+
+// reply button
+
+.replybtn-1 {
+  background-color: #ff5219;
+}
+
+.reply-btn {
+  font-family: "Roboto", sans-serif;
+  text-transform: none !important;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff !important;
+  height: 50px;
+  display: inline-block;
+  padding: 9px 25px 0px 25px;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.9, 0.52, 1, 1) 3s;
+  position: relative;
+  z-index: 1;
+}
+
+.reply-btn::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 74px;
+  z-index: -5;
+  transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+
+.replybtn-1 {
+  background-color: $orange;
+}
+.replybtn-1::before {
+  background-color: $blue;
+}
+
+.replybtn-1:hover.replybtn-1::after {
+  background-color: $orange;
+}
+
+@media only screen and (max-width: 1200px) {
+  .button {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    font-size: 20px;
+    font-weight: 500;
+
+    height: 60px;
+
+    padding: 15px 20px;
+    border-radius: 10px;
+  }
+  .button::before {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    top: 50%;
+    right: 15px;
+  }
+
+  a {
+    .linkbutton {
+      width: 320px;
+    }
+  }
+  a {
+    .lbtn-1 {
+      top: 200px;
+      left: 100px;
+    }
+  }
+  a {
+    .lbtn-2 {
+      top: 300;
+      right: 0px;
+
+      .title {
+        font-size: 20px !important;
+      }
+    }
+  }
+  a {
+    .lbtn-3 {
+      top: 400px;
+      left: 121px;
+    }
+  }
+
+  .lbtn-img {
+    width: 40px;
+    height: 40px;
+
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  .search-group {
+    width: 295px;
+    height: 56px;
+    input {
+      width: 239px;
+    }
+    button {
+      margin-left: -5px;
+      width: 56px;
+    }
+  }
+
+  .select-column {
+    select {
+      height: 46px;
+      width: 220px;
+      border-radius: 10px;
+    }
+  }
+
+  // reply button
+
+  .reply-btn {
+    font-size: 20px;
+    height: 50px;
+    padding: 9px 25px 0px 25px;
+    border-radius: 10px;
+  }
+
+  .reply-btn::before {
+    height: 30px;
+    width: 30px;
+
+    right: 74px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .button {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    font-size: 20px;
+    font-weight: 500;
+
+    height: 60px;
+
+    padding: 15px 20px;
+    border-radius: 10px;
+  }
+  .button::before {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    top: 50%;
+    right: 15px;
+  }
+
+  a {
+    .linkbutton {
+      width: 320px;
+    }
+  }
+  a {
+    .lbtn-1 {
+      top: 200px;
+      left: 100px;
+    }
+  }
+  a {
+    .lbtn-2 {
+      top: 300;
+      right: 0px;
+
+      .title {
+        font-size: 20px !important;
+      }
+    }
+  }
+  a {
+    .lbtn-3 {
+      top: 400px;
+      left: 121px;
+    }
+  }
+
+  .lbtn-img {
+    width: 40px;
+    height: 40px;
+
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  .search-group {
+    width: 295px;
+    height: 56px;
+    input {
+      width: 239px;
+    }
+    button {
+      margin-left: -5px;
+      width: 56px;
+    }
+  }
+
+  .select-column {
+    select {
+      height: 46px;
+      width: 220px;
+      border-radius: 10px;
+    }
+  }
+
+  // reply button
+
+  .reply-btn {
+    font-size: 20px;
+    height: 50px;
+    padding: 9px 25px 0px 25px;
+    border-radius: 10px;
+  }
+
+  .reply-btn::before {
+    height: 30px;
+    width: 30px;
+
+    right: 74px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .button {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    font-size: 20px;
+    font-weight: 500;
+
+    height: 60px;
+
+    padding: 15px 20px;
+    border-radius: 10px;
+  }
+  .button::before {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    top: 50%;
+    right: 15px;
+  }
+
+  a {
+    .linkbutton {
+      width: 320px;
+    }
+  }
+  a {
+    .lbtn-1 {
+      top: 200px;
+      left: 100px;
+    }
+  }
+  a {
+    .lbtn-2 {
+      top: 300;
+      right: 0px;
+
+      .title {
+        font-size: 20px !important;
+      }
+    }
+  }
+  a {
+    .lbtn-3 {
+      top: 200px;
+      left: 121px;
+    }
+  }
+
+  .lbtn-img {
+    width: 40px;
+    height: 40px;
+
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  .search-group {
+    width: 295px;
+    height: 56px;
+    input {
+      width: 239px;
+    }
+    button {
+      margin-left: -5px;
+      width: 56px;
+    }
+  }
+
+  .select-column {
+    select {
+      height: 46px;
+      width: 220px;
+      border-radius: 10px;
+    }
+  }
+
+  // reply button
+
+  .reply-btn {
+    font-size: 20px;
+    height: 50px;
+    padding: 9px 25px 0px 25px;
+    border-radius: 10px;
+  }
+
+  .reply-btn::before {
+    height: 30px;
+    width: 30px;
+
+    right: 74px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .button {
+    font-size: 20px;
+    font-weight: 500;
+    height: 60px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    display: block;
+    width: 180px;
+  }
+  .button::before {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    top: 50%;
+    right: 15px;
+  }
+
+  a {
+    .linkbutton {
+      width: 224px !important;
+      height: 100px !important;
+    }
+  }
+  a {
+    .lbtn-1 {
+      top: 100px !important;
+      left: 100px !important;
+    }
+  }
+  a {
+    .lbtn-2 {
+      top: 300;
+      right: 0px;
+
+      .title {
+        font-size: 20px !important;
+      }
+    }
+  }
+  a {
+    .lbtn-3 {
+      top: 194px !important;
+      left: 30px;
+    }
+  }
+
+  .lbtn-img {
+    width: 40px;
+    height: 40px;
+
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  .search-group {
+    width: 295px;
+    height: 56px;
+    input {
+      width: 239px;
+    }
+    button {
+      margin-left: -5px;
+      width: 56px;
+    }
+  }
+
+  .select-column {
+    select {
+      height: 46px;
+      width: 220px;
+      border-radius: 10px;
+    }
+  }
+
+  // reply button
+
+  .reply-btn {
+    font-size: 20px;
+    height: 50px;
+    padding: 9px 25px 0px 25px;
+    border-radius: 10px;
+  }
+
+  .reply-btn::before {
+    height: 30px;
+    width: 30px;
+
+    right: 74px;
+  }
+}
+
+.top-btn {
+  right: 60px;
+  bottom: 10%;
+  width: auto;
+  z-index: 222;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  background: 0 0;
+  transition: all 0.5s;
+  .Up-btn-cickle {
+    width: 100px;
+    height: 100px;
+    border: 5px solid blue;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    i {
+      font-size: 30px;
+      color: $orange;
+    }
+  }
+  .top-btn-text {
+    display: flex;
+    justify-content: center;
+    color: $orange !important;
+  }
+  &:hover {
+    .Up-btn-cickle {
+      border: 5px solid $orange;
+
+      i {
+        color: $blue;
+      }
+    }
+    .top-btn-text {
+      color: $blue !important;
+    }
+  }
+}
+.top-btn.active {
+  pointer-events: auto;
+  bottom: 32px;
+  opacity: 1;
+}

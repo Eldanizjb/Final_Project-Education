@@ -1,0 +1,37 @@
+@use "custom";
+
+//import the components
+@use "components/animations";
+@use "components/buttons";
+@use "components/mixins";
+@use "components/typography";
+@use "components/fonts";
+
+//import the sections
+@use "sections/preloader";
+@use "sections/header";
+@use "sections/navbar";
+@use "sections/breadcrum";
+@use "sections/intro";
+@use "sections/about";
+@use "sections/blogs";
+@use "sections/blogs-detail";
+@use "sections/courses";
+@use "sections/courses-details";
+@use "sections/instructors";
+@use "sections/instructor-detail";
+@use "sections/events";
+@use "sections/event-detail";
+@use "sections/contact";
+@use "sections/category";
+@use "sections/companie";
+@use "sections/features";
+@use "sections/pricing";
+@use "sections/testimonias";
+@use "sections/relaited";
+@use "sections/sidebar";
+@use "sections/programs";
+@use "sections/pagination";
+@use "sections/accardion";
+@use "sections/subscribe";
+@use "sections/footer";

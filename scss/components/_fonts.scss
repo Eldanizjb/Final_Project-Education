@@ -1,0 +1,106 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+// div,
+// p,
+// h1,
+// h2,
+// h3,
+// a {
+//   -webkit-transition: 0.5s ease-in-out;
+//   -moz-transition: 0.5s ease-in-out;
+//   -o-transition: 0.5s ease-in-out;
+//   transition: 0.5s ease-in-out;
+// }
+
+.header {
+  @include HeaderFont;
+}
+.headerBlue {
+  @include HeaderUppercaseFont;
+}
+.title {
+  @include TitleFont;
+}
+
+.content {
+  @include TextFont;
+}
+span {
+  @include SpanFont;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    font-size: 52px !important;
+  }
+  .headerBlue {
+    font-size: 32px !important;
+  }
+  .title {
+    font-size: 27px !important;
+  }
+
+  .content {
+    font-size: 17px !important;
+  }
+  span {
+    font-size: 17px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    font-size: 50px !important;
+  }
+  .headerBlue {
+    font-size: 30px !important;
+  }
+  .title {
+    font-size: 25px !important;
+  }
+
+  .content {
+    font-size: 15px !important;
+  }
+  span {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    font-size: 45px !important;
+  }
+  .headerBlue {
+    font-size: 25px !important;
+  }
+  .title {
+    font-size: 20px !important;
+  }
+
+  .content {
+    font-size: 15px !important;
+  }
+  span {
+    font-size: 15px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .header {
+    font-size: 40px !important;
+  }
+  .headerBlue {
+    font-size: 20px !important;
+  }
+  .title {
+    font-size: 15px !important;
+  }
+
+  .content {
+    font-size: 15px !important;
+  }
+  span {
+    font-size: 15px !important;
+  }
+}

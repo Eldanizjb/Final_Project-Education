@@ -1,0 +1,152 @@
+@use "../custom" as *;
+
+@keyframes animation-1 {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: transform(45px);
+  }
+}
+
+@keyframes animation-2 {
+  0% {
+    transform: transform(20px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes animation-3 {
+  0% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: transform(50px);
+  }
+}
+
+@keyframes animation-4 {
+  0% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
+@keyframes title-animation {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 100%;
+  }
+  80% {
+    opacity: 1;
+  }
+  95% {
+    width: 100%;
+    opacity: 0;
+  }
+  to {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes lbtn-1 {
+  0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes lbtn-2 {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes lbtn-3 {
+  0% {
+    transform: translateX(-10px);
+  }
+  70% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateX(-45px);
+  }
+}
+
+@keyframes border-plus {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes contact-plus {
+  0% {
+    transform: scale(0.1);
+    border: 6px solid $orange;
+    opacity: 2;
+  }
+  50% {
+    transform: scale(0.2);
+    border: 6px solid $blue;
+
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.3);
+    border: 6px solid $white;
+    opacity: 0;
+  }
+}
+@keyframes border-animation-full {
+  0% {
+    transform: translateX(-25px);
+  }
+  25% {
+    transform: translateY(50px);
+  }
+  75% {
+    transform: translateZ(-45px);
+  }
+  100% {
+    transform: translate(50px);
+  }
+}
+
+@keyframes bannerLight {
+  0%,
+  10%,
+  30%,
+  50%,
+  70%,
+  100% {
+    transform: translateY(10px);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-50px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,75 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.section-testimonial {
+  .testimonial-all {
+    .testimonial-left {
+      h1 {
+        font-size: 50px !important;
+      }
+    }
+    .testimonial-right {
+      .slideTestimonial {
+        margin-left: 20px;
+
+        .slideTestimonial-item {
+          @include radius;
+          width: 550px;
+          height: 300px;
+          position: relative;
+
+          .testimonial-img {
+            border: 1px solid $orange;
+            width: 100px;
+            height: 100px;
+            @include radius;
+
+            img {
+              width: 80%;
+              height: 80%;
+            }
+          }
+          p {
+            color: brown;
+          }
+
+          .testimonial-content {
+            p {
+              color: $orange;
+            }
+            img {
+              position: absolute;
+              width: 20%;
+              bottom: 9px;
+              right: 49px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .card-blogs .blogs-date-comments .blogs-date p {
+    padding-right: 0px;
+  }
+  .section-blogs .card-blogs .blogs-date-comments .blogs-date p {
+    padding-left: 6px;
+    border-right: 1px solid;
+    /* padding-right: 25px; */
+  }
+}
+@media only screen and (max-width: 992px) {
+  .card-blogs .blogs-date-comments .blogs-date p {
+    padding-right: 0px;
+  }
+  .section-blogs .card-blogs .blogs-date-comments .blogs-date p {
+    padding-left: 6px;
+    border-right: 1px solid;
+    /* padding-right: 25px; */
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}

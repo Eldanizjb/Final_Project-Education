@@ -1,0 +1,206 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.blog-card {
+  .blog-detail-advice {
+    margin-bottom: 25px;
+
+    ul {
+      li {
+        @include TextFont;
+        font-size: 16px;
+        margin-left: 7px;
+        margin-bottom: 0;
+        color: $badge;
+        font-weight: 500;
+      }
+    }
+  }
+  .blog-detail-opinion {
+    border-left: 4px solid $orange;
+    margin-left: 10px;
+    text-align: start;
+    padding-left: 12px;
+    @include shadow;
+    @include radius;
+    margin-bottom: 30px;
+
+    .opinion-autor h3 {
+      color: $blue;
+      padding-left: 50px;
+      position: relative;
+      &::before {
+        margin-top: 15px;
+        content: "";
+        height: 2px;
+        width: 30px;
+        left: 0;
+        position: absolute;
+        background: $blue;
+        display: inline-block;
+      }
+    }
+  }
+  .blog-detail-share {
+    p {
+      display: inline;
+    }
+    .sidebar-tag-content {
+      display: inline;
+      .tag-categories {
+        li {
+          display: inline-block;
+          align-items: center;
+          margin-right: 10px;
+          margin-bottom: 15px;
+          a {
+            display: inline-block;
+            font-weight: 600;
+            color: #777777;
+            border: 1px solid #777777;
+            padding: 10px 20px;
+            background-color: $white;
+            @include radius;
+            transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+            &:hover {
+              border: none;
+              background-color: $orange;
+              color: $white;
+              box-shadow: 0px 10px 20px 0px rgb(255 82 25 / 50%);
+              transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+            }
+          }
+        }
+      }
+    }
+    .blog-detail-sosials-all {
+      display: inline;
+      a {
+        color: $badge;
+        padding: 0 5px;
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+
+.card-blogs {
+  padding: 5px;
+  @include shadow;
+  .img-section {
+    img {
+    }
+  }
+  .blogs-date-comments {
+    .blogs-date {
+      img {
+        max-height: 50% !important;
+      }
+      p {
+        padding-left: 10px;
+        border-right: 1px solid;
+        padding-right: 25px;
+      }
+    }
+    .blogs-comments {
+      img {
+      }
+      span {
+        padding-left: 10px;
+      }
+    }
+  }
+  &:hover .img-section > img {
+    transform: scale(1.035);
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+  }
+  &:hover .card-body > h3 {
+    color: $orange !important;
+  }
+}
+
+.blog-detail-comment {
+  .blog-detail-customer-comment {
+    .customer-comment-img {
+      img {
+        border-radius: 50%;
+      }
+    }
+    .customer-comment-content {
+      h3 {
+      }
+      span {
+        color: $blue !important;
+      }
+      p {
+      }
+      a {
+        i {
+          margin-left: 3px !important;
+        }
+      }
+      a > span {
+        color: #fff !important;
+        font-size: 20px !important;
+        font-weight: 500 !important;
+      }
+    }
+  }
+}
+
+.blog-detail-reply {
+  margin-bottom: 25px;
+
+  .leave-reply-form {
+    .form-group {
+      display: block;
+      position: relative;
+      font-size: 0;
+      line-height: 1;
+      margin-bottom: 20px;
+      visibility: visible;
+      animation-delay: 0.4s;
+      margin-left: 5px;
+      input {
+        border: solid 1px $gray !important;
+        width: 100%;
+        height: 60px;
+        background: #ffffff;
+        font-size: 15px;
+        line-height: 28px;
+        color: #131830;
+        border: none;
+        outline: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        box-shadow: none;
+      }
+      textarea {
+        height: 230px;
+        width: 100%;
+        @include radius;
+        padding: 20px;
+        margin-bottom: 25px;
+        border: solid 1px $gray !important;
+      }
+    }
+  }
+  .reply {
+    width: 181px !important;
+  }
+}
+
+.add-review-box {
+}
+.listing-desc-headline {
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}

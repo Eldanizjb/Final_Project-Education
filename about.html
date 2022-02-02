@@ -1,0 +1,696 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodeCampBaku</title>
+    <!--Link CSS file-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Link Bootstrap file-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Link Fontawesome-->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!--Link Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- CSS Link Plagins for videos Into Pages-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- two links for fonts Roboto and Jost-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- two links for owl-carousel-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css ">
+</head>
+
+<body class="hidden" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Preloader -->
+    <div id="onload" class="centrado">
+        <p class="content">Loading...</p>
+        <div class="lds-dual-ring"></div>
+    </div>
+    <!--!--!--section header--!--!--!-->
+    <header id="header" class="section-header">
+        <div class="header-top" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-8 col-sm-12 col-12">
+                        <div class="header-contact d-flex ">
+                            <div class="header-locations d-flex">
+                                <div class="location-icon ">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                </div>
+                                <div class="location-text ">
+                                    <a href="#" title="location">
+                                        <p class="content">12/7 Aabot, Poor Street, Mumbai</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-mail d-flex ">
+                                <div class="mail-icon">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <div class="mail-text">
+                                    <a href="#" title="mail">
+                                        <p class="content">info@gmail.com</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12 col-12">
+                        <div class="header-social">
+                            <a href="#" title="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i> </i></a>
+                            <a href="#" title="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" title="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" title="pinterest"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <nav id="sticky" class="header-nav navbar navbar-expand-lg menu  ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/icons/logo.png" alt="logo_banner">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item secondLi">
+                        <a class="nav-link active active-color" href="about.html">About Us </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="course.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="course.html">Courses List</a></li>
+                            <li><a class="dropdown-item" href="course-details.html">Courses Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="course.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Events
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="event.html">Event List</a></li>
+                            <li><a class="dropdown-item" href="event-detail.html">Event Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="instructor.html">Instructor</a></li>
+                            <li><a class="dropdown-item" href="instructor-detail.html">Instructor Detail</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="faq.html">Frequently Asked Questions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="blog.html">Blog List</a></li>
+                            <li><a class="dropdown-item" href="blog-detail.html">Blog Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <a href="course-details.html" class="button btn-1">Try For Free</a>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--!--!--section Intro--!--!--!-->
+    <section id="banner" class=" section-banner">
+        <span class="animation animation-1">
+            <img src="assets/images/animations/shape-1.png" alt="">
+        </span>
+        <span class="animation animation-2">
+            <img src="assets/images/animations/shape-2.png" alt="">
+        </span>
+        <span class="animation animation-3">
+            <img src="assets/images/animations/shape-3.png" alt="">
+        </span>
+        <span class="animation animation-4">
+            <img src="assets/images/animations/shape-4.png" alt="">
+        </span>
+        <span class=" animation-5"></span>
+        <span class=" animation-6"></span>
+        <div class="container banner-title d-flex justify-content-center">
+            <div class="row">
+                <div class=" col-lg-12 col-md-12 col-sm-12 col-12 intro d-flex flex-column justify-content-center">
+                    <h1 class="header">About Us</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--!--!--section categories--!--!--!-->
+    <section id="breadcrum" class="section-breadcrum">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 d-flex flex-wrap-nowrap justify-content-center">
+                    <div class="banner-breadcrum ">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="index.html" title="Home">Home</a></li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                            <li><a href="about.html" title="About Us">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+    </section>
+    <!--!--!--section about us--!--!--!-->
+    <section id="about" class=" section-about mb-0 pt-5 pb-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 intros mr-5 ">
+                    <div class="about-img"> <img src="assets/images/arts/about-img.png" alt="about-img">
+                    </div>
+                    <div class="about-img-bg"> <img src="assets/images/icons/about-img-bg.png" alt="about-img-bg">
+                    </div>
+                    <a href="#">
+                        <dl class="row bg-white linkbutton lbtn-1">
+                            <dt class="col-sm-2 circle">
+                                <div class="lbtn-img img1"><img src="assets/images/icons/banner-aliment-icon-1.png"
+                                        class="rounded float-start" alt="about-aliment-icon"></div>
+                            </dt>
+                            <dd class="col-sm-10">
+                                <h3 class="title">Congratulations</h3>
+                                <span>Your admission completed</span>
+                            </dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <dl class="row bg-white linkbutton lbtn-3">
+                            <dt class="col-sm-2 circle">
+                                <div class="lbtn-img img3"><img src="assets/images/icons/banner-aliment-icon-3.png"
+                                        class="rounded float-start" alt="about-aliment-icon"></div>
+                            </dt>
+                            <dd class="col-sm-10">
+                                <h3 class="title">578k</h3>
+                                <span>Assisted Student</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </div>
+                <div class=" col-lg-6 col-md-12 col-sm-12 col-12 intro  ml-5 ">
+                    <h2 class="headerBlue"> About us</h2>
+                    <h1 class="header">We Have Best Online Education</h1>
+                    <p class=" intro3 ">Morbi porttitor ligula id varius consectetur. Integer ipsum justo, congue sit
+                        amet
+                        massa vel, porttitor semper magna. Orci varius natoque penatibus et magnis dis parturient
+                        montes, nascetur
+                        ridiculus mus.</p>
+                    <ul class="fa-ul m-0">
+                        <li class=" mt-2"></span><i class="fa fa-check-circle"></i>Suspendisse nunc massa, pellentesque
+                            eu nibh eget.</li>
+                        <li class=" mt-2"></span><i class="fa fa-check-circle"></i>Suspendisse nunc massa, pellentesque
+                            eu nibh eget.</li>
+                        <li class=" mt-2"><i class="fa fa-check-circle"></i>Suspendisse nunc massa, pellentesque
+                            eu nibh eget.</li>
+                    </ul>
+                    <div class="intro_buttons mt-2">
+                        <a href="#" class="button btn-1">Explore more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--!--!--section companies--!--!--!-->
+    <section id="companies" class="sectionCompanies">
+        <div class="container forBackground">
+            <div class="row">
+                <div class="col-lg-12 sliderCompanies owl-carousel owl-theme">
+                    <div class="slide_item ">
+                        <img src="assets/images/companies/brand-1.png" alt="brand">
+                    </div>
+                    <div class="slide_item">
+                        <img src="assets/images/companies/brand-2.png" alt="brand">
+                    </div>
+                    <div class="slide_item">
+                        <img src="assets/images/companies/brand-3.png" alt="brand">
+                    </div>
+                    <div class="slide_item">
+                        <img src="assets/images/companies/brand-4.png" alt="brand">
+                    </div>
+                    <div class="slide_item">
+                        <img src="assets/images/companies/brand-5.png" alt="brand">
+                    </div>
+                    <div class="slide_item">
+                        <img src="assets/images/companies/brand-6.png" alt="brand">
+                    </div>
+                </div>
+                <div class="col-lg-12 sliderBackground"></div>
+            </div>
+        </div>
+    </section>
+    <!--!--!--section programs--!--!--!-->
+    <section id="programs" class="section-programs bg-light pb-5 pt-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12 programs-title">
+                    <h2 class="headerBlue"> Academics Programs</h2>
+                    <h1 class="header">Best Academics Programs</h1>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 programs-card">
+                    <div class="card programs">
+                        <div class="img-section">
+                            <img src="assets/images/portfolio/course-1.jpg" class="card-img-top" alt="course-1.jpg">
+                        </div>
+                        <div class="card-body p-2">
+                            <h3 class="card-title" href="#">Undergraduate</h3>
+                            <p class="content">Curabitur pellentesque id nulla sit amet vestibulum estibulum mollis.</p>
+                            <a href="">Apply now <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 programs-card">
+                    <div class="card programs">
+                        <div class="img-section">
+                            <img src="assets/images/portfolio/course-1.jpg" class="card-img-top" alt="course-1.jpg">
+                        </div>
+                        <div class="card-body p-2">
+                            <h3 class="card-title" href="#">Undergraduate</h3>
+                            <p class="content">Curabitur pellentesque id nulla sit amet vestibulum estibulum mollis.</p>
+                            <a href="#">Apply now <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 programs-card">
+                    <div class="card programs">
+                        <div class="img-section">
+                            <img src="assets/images/portfolio/course-1.jpg" class="card-img-top" alt="course-1.jpg">
+                        </div>
+                        <div class="card-body p-2">
+                            <h3 class="card-title" href="#">Undergraduate</h3>
+                            <p class="content">Curabitur pellentesque id nulla sit amet vestibulum estibulum mollis.</p>
+                            <a href="#">Apply now <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 programs-card">
+                    <div class="card programs">
+                        <div class="img-section">
+                            <img src="assets/images/portfolio/course-1.jpg" class="card-img-top" alt="course-1.jpg">
+                        </div>
+                        <div class="card-body p-2">
+                            <h3 class="card-title" href="#">Undergraduate</h3>
+                            <p class="content">Curabitur pellentesque id nulla sit amet vestibulum estibulum mollis.</p>
+                            <a href="#">Apply now <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--!--!--section events--!--!--!-->
+    <section id="events" class="section-events mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 left-event">
+                    <img src="assets/images/arts/event-img.jpg" alt="video illustration"
+                        class="img-fluid justify-content-left">
+                    <a href="" type="text/javascript"
+                        class="glightbox position-absolute top-50 start-50 translate-midlle">
+                        <span>
+                            <i class="fas fa-play-circle"></i>
+                            <p class="smalword">Watch Us !</p>
+                        </span>
+                        <span class="border-animation border-animation--border-1"></span>
+                        <span class="border-animation border-animation--border-2"></span>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 right-event ">
+                    <h2 class="headerBlue"> Our Events </h2>
+                    <h1 class="header">Join Our Upcoming Eventss</h1>
+                    <div class="right-event-box bg-white d-flex p-4 mb-4 ">
+                        <div class="right-event-date d-flex flex-column justify-content-center">
+                            <div class="event-date pb-0">
+                                <p class="content">30</p>
+                            </div>
+                            <div class="event-year">
+                                <p class="content">Dec, 2021</p>
+                            </div>
+                        </div>
+                        <div class="event-content d-flex flex-column justify-content-center">
+                            <div class="content-date  d-flex pb-0 mb-0">
+                                <p class="content">10:30am To 2:30pm</p>
+                                <p class="content">Poland</p>
+                            </div>
+                            <div class="link-event">
+                                <a href="#">
+                                    <h3 class="title">Business creativity workshops</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-event-box bg-white d-flex p-4 mb-4">
+                        <div class="right-event-date d-flex flex-column justify-content-center">
+                            <div class="event-date pb-0">
+                                <p class="content">15</p>
+                            </div>
+                            <div class="event-year">
+                                <p class="content">Jan, 2022</p>
+                            </div>
+                        </div>
+                        <div class="event-content d-flex flex-column justify-content-center">
+                            <div class="content-date  d-flex pb-0 mb-0">
+                                <p class="content">10:30am To 2:30pm</p>
+                                <p class="content">Poland</p>
+                            </div>
+                            <div class="link-event">
+                                <a href="#">
+                                    <h3 class="title">Street Performance: Call for Art.</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-event-box bg-white d-flex p-4 mb-4">
+                        <div class="right-event-date d-flex flex-column justify-content-center">
+                            <div class="event-date pb-0">
+                                <p class="content">28</p>
+                            </div>
+                            <div class="event-year">
+                                <p class="content">Fab, 2022</p>
+                            </div>
+                        </div>
+                        <div class="event-content d-flex flex-column justify-content-center">
+                            <div class="content-date  d-flex pb-0 mb-0">
+                                <p class="content">10:30am To 2:30pm</p>
+                                <p class="content">Poland</p>
+                            </div>
+                            <div class="link-event">
+                                <a href="#">
+                                    <h3 class="title">Digital transformation conference</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--!--!--section testimonial--!--!--!-->
+    <section id="testimonial" class="section-testimonial bg-light mb-5 mt-5">
+        <div class="container testimonial-all">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 testimonial-left">
+                    <h2 class="headerBlue"> Testimonal</h2>
+                    <h1 class="header">What Our Client Says About Us</h1>
+                    <p class="content"> Proin et lacus eu odio tempor porttitor id vel augue. Vivamus volutpat vehicula
+                        sem, et
+                        imperdiet enim
+                        tempor id. Phasellus lobortis efficitur nisl eget vehicula. Donec viverra blandit nunc, nec
+                        tempor ligula
+                        ullamcorper venenatis. </p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 testimonial-right">
+                    <div class="slideTestimonial owl-carousel owl-theme">
+                        <div class="slideTestimonial-item bg-white mb-5 mt-5 p-3">
+                            <p class="content">"Proin feugiat tortor non neque eleifend, at fermentum est elementum. Ut
+                                mollis leo
+                                odio vulputate rutrum. Nunc sagittis sit amet ligula ut eleifend. Mauris consequat
+                                mauris sit amet turpis commodo fermentum. Quisque consequat tortor ut nisl
+                                finibus"</p>
+                            <div class="row">
+                                <div class="col-lg-4 d-flex flex-direction-column align-items-center">
+                                    <div
+                                        class="testimonial-img d-flex flex-direction-column justify-content-center align-items-center">
+                                        <img src="assets/images/testimoials/client-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="testimonial-content">
+                                        <h3 class="title">Christine Rose</h3>
+                                        <p class="content">Customer</p>
+                                        <img src="assets/images/icons/quote.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideTestimonial-item bg-white mb-5 mt-5 p-3">
+                            <p class="content">"Proin feugiat tortor non neque eleifend, at fermentum est elementum. Ut
+                                mollis leo
+                                odio vulputate rutrum. Nunc sagittis sit amet ligula ut eleifend. Mauris consequat
+                                mauris sit amet turpis commodo fermentum. Quisque consequat tortor ut nisl
+                                finibus"</p>
+                            <div class="row">
+                                <div class="col-lg-4 d-flex flex-direction-column align-items-center">
+                                    <div
+                                        class="testimonial-img d-flex flex-direction-column justify-content-center align-items-center">
+                                        <img src="assets/images/testimoials/client-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="testimonial-content">
+                                        <h3 class="title">Christine Rose</h3>
+                                        <p class="content">Customer</p>
+                                        <img src="assets/images/icons/quote.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slideTestimonial-item bg-white mb-5 mt-5 p-3">
+                            <p class="content">"Proin feugiat tortor non neque eleifend, at fermentum est elementum. Ut
+                                mollis leo
+                                odio vulputate rutrum. Nunc sagittis sit amet ligula ut eleifend. Mauris consequat
+                                mauris sit amet turpis commodo fermentum. Quisque consequat tortor ut nisl
+                                finibus"</p>
+                            <div class="row">
+                                <div class="col-lg-4 d-flex flex-direction-column align-items-center">
+                                    <div
+                                        class="testimonial-img d-flex flex-direction-column justify-content-center align-items-center">
+                                        <img src="assets/images/testimoials/client-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="testimonial-content">
+                                        <h3 class="title">Christine Rose</h3>
+                                        <p class="content">Customer</p>
+                                        <img src="assets/images/icons/quote.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--!--!--section blog--!--!--!-->
+    <section id="blogs" class="section-blogs mt-5 mb-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 header-blog">
+                    <h2 class="headerBlue">Our blog</h2>
+                    <h1 class="header">Latest Blog & News</h1>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 ">
+                            <div class="card card-blogs">
+                                <div class="img-section">
+                                    <img src="assets/images/portfolio/course-1.jpg" class="card-img-top"
+                                        alt="course-1.jpg">
+                                </div>
+                                <div class="card-body p-2">
+                                    <h3 class="card-title" href="#">Proin feugiat tortor non neque eleifend.</h3>
+                                </div>
+                                <hr>
+                                <div class="row blogs-date-comments pt-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 blogs-date d-flex justify-content-end">
+                                        <img src="assets/images/icons/calendar.png" alt="calendar">
+                                        <p class="date">07.Jan.2022</p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 blogs-comments">
+                                        <img src="assets/images/icons/comment.png" alt="calendar">
+                                        <span class="all-comment">3 Comments</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 ">
+                            <div class="card card-blogs">
+                                <div class="img-section">
+                                    <img src="assets/images/portfolio/course-2.jpg" class="card-img-top"
+                                        alt="course-1.jpg">
+                                </div>
+                                <div class="card-body p-2">
+                                    <h3 class="card-title" href="#">Proin feugiat tortor non neque eleifend.</h3>
+                                </div>
+                                <hr>
+                                <div class="row blogs-date-comments pt-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 blogs-date d-flex justify-content-end">
+                                        <img src="assets/images/icons/calendar.png" alt="calendar">
+                                        <p class="date">07.Jan.2022</p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 blogs-comments">
+                                        <img src="assets/images/icons/comment.png" alt="calendar">
+                                        <span class="all-comment">3 Comments</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12 ">
+                            <div class="card card-blogs">
+                                <div class="img-section">
+                                    <img src="assets/images/portfolio/course-3.jpg" class="card-img-top"
+                                        alt="course-1.jpg">
+                                </div>
+                                <div class="card-body p-2">
+                                    <h3 class="card-title" href="#">Proin feugiat tortor non neque eleifend.</h3>
+                                </div>
+                                <hr>
+                                <div class="row blogs-date-comments pt-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 blogs-date d-flex justify-content-end">
+                                        <img src="assets/images/icons/calendar.png" alt="calendar">
+                                        <p class="date">07.Jan.2022</p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 blogs-comments">
+                                        <img src="assets/images/icons/comment.png" alt="calendar">
+                                        <span class="all-comment">3 Comments</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--!--!--section subscribe--!--!--!-->
+    <section id="subscribe" class="section-subscribe">
+        <div class="container">
+            <div class="outer-box">
+                <img src="assets/images/icons/cta-bg-img.png" alt="">
+                <div class="row">
+                    <div class="title-column col-lg-9 col-md-12 col-sm-12 col-12 ">
+                        <h1 class="header">Start Your Best Online Classes With Us</h1>
+                    </div>
+                    <div class="subscribe-form col-lg-3 col-md-12 col-sm-12 col-12">
+                        <a href="#" class="button btn-1">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--!--!--section footer--!--!--!-->
+    <section id="footer" class="section-footer bg-gradient ">
+        <div class="footer-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 footer-about-sosials">
+                        <div class="fooret-logo">
+                            <img src="assets/images/icons/logo-footer.png" alt="">
+                        </div>
+                        <p class="content">Duis a tempor magna. Maecenas ligula felis, imperdiet quis arcu eget, blandit
+                            ultricies
+                            risus. Vivamus
+                            fringilla urna vel risus congue accumsan.</p>
+                        <div class="footer-sosials">
+                            <a href="#" title="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" title="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" title="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" title="youtube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 first-links">
+                        <h3 class="title">Our Link</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 second-links">
+                        <h3 class="title">Other Link</h3>
+                        <ul>
+                            <li><a href="#">Instructor</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Event</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Term & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 fooret-subscribe">
+                        <h3 class="title">Subscribe Now</h3>
+                        <div class="footer-subscribe-form">
+                            <input type="email" name="email" class="form-input subscribe-input"
+                                placeholder="Email Address" required="">
+                            <button type="submit" class="sec-btn" title="Subscribe"><i class="fa fa-paper-plane"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span class="copyright-text">Copyright &copy; 2022 <a href="#">CodeAcademy.</a> All rights
+                            reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#" id="top" class="top-btn" style="display: block;">
+        <div class="Up-btn-cickle">
+            <i class="fas fa-book-reader"></i>
+        </div>
+        <span class="top-btn-text">Up</span>
+    </a>
+    <!-- Js Link Plagins for videos Into Pages-->
+    <script src="assets/vendors/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            href: "https://www.youtube.com/watch?v=ZN615Fm1PKY",
+            type: "video",
+            source: "youtube", //vimeo, youtube or local
+            width: 900,
+        });
+    </script>
+    <!--Link Bootstrap Bundle with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- two links for owl-carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

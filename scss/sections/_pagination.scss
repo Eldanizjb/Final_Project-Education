@@ -1,0 +1,58 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  .pagination-change {
+    i {
+      color: $orange !important;
+      font-size: 20px;
+    }
+  }
+  .pagination-list {
+    display: flex;
+    padding-left: 0px;
+    margin: 0px 18px 20px 18px;
+
+    .pagination-item {
+      display: flex;
+      width: 45px;
+      height: 45px;
+      border: 1px solid;
+      border-radius: 50%;
+      justify-content: center;
+      border: none;
+      align-items: center;
+      margin-left: 10px;
+      background-color: #aea4a43b;
+      a {
+        color: #777777;
+        font-size: 20px;
+      }
+      &:hover {
+        background-color: $orange !important;
+      }
+      &:hover a {
+        color: $white !important;
+      }
+    }
+    .active {
+      background-color: $orange !important;
+      a {
+        color: $white !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}

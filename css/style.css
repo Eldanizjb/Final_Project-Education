@@ -1,0 +1,22 @@
+@use "custom";
+@use "components/animations";
+@use "components/buttons";
+@use "components/mixins";
+@use "components/typography";
+@use "sections/about";
+@use "sections/blogs";
+@use "sections/category";
+@use "sections/companie";
+@use "sections/courses";
+@use "sections/events";
+@use "sections/features";
+@use "sections/footer";
+@use "sections/instructors";
+@use "sections/intro";
+@use "sections/header";
+@use "sections/pricing";
+@use "sections/testimonias";
+@use "sections/subscribe";
+@use "sections/breadcrum";
+@use "sections/programs";
+/*# sourceMappingURL=style.css.map */

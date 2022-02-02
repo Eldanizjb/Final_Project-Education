@@ -1,0 +1,64 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.section-about {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: #fbfaff !important;
+  z-index: 9;
+  height: 765px;
+  padding-top: 110px;
+  margin-top: -75px;
+}
+ul {
+  list-style: none;
+  li {
+    i {
+      color: chocolate;
+    }
+  }
+}
+.about-img {
+  z-index: 2;
+
+  img {
+    object-fit: cover;
+    width: auto;
+    max-width: 100%;
+  }
+}
+.about-img-bg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  img {
+    object-fit: cover;
+    width: auto;
+    max-width: 100%;
+  }
+}
+.intro {
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-about {
+    height: 765px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .section-about {
+    height: 1250px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section-about {
+    height: 1250px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .section-about {
+    height: 1250px !important;
+  }
+}
