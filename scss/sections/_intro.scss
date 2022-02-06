@@ -2,19 +2,77 @@
 @use "../components/mixins" as *;
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+.allpages {
+  height: 650px !important;
+}
+
 .section-banner {
   position: relative;
   width: 100%;
   background-color: #fbfaff !important;
   z-index: 9;
-  height: 765px;
   padding-top: 110px;
   margin-top: -75px;
+  overflow: hidden;
+  background-color: #fbfaff;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    border-radius: 100%;
+    top: -110px;
+    left: -370px;
+    opacity: 0.5;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 95, 252, 0.6) 0%,
+      rgba(0, 95, 252, 0.6) 0%,
+      rgba(0, 95, 252, 0) 68%,
+      rgba(0, 95, 252, 0) 100%
+    );
+    -webkit-background: radial-gradient(
+      ellipse at center,
+      rgba(0, 95, 252, 0.6) 0%,
+      rgba(0, 95, 252, 0.6) 0%,
+      rgba(0, 95, 252, 0) 68%,
+      rgba(0, 95, 252, 0) 100%
+    );
+    z-index: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    border-radius: 100%;
+    top: 37px;
+    right: -390px;
+    opacity: 0.5;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 82, 25, 0.6) 0%,
+      rgba(255, 82, 25, 0.6) 0%,
+      rgba(255, 82, 25, 0) 68%,
+      rgba(255, 82, 25, 0) 100%
+    );
+    -webkit-background: radial-gradient(
+      ellipse at center,
+      rgba(255, 82, 25, 0.6) 0%,
+      rgba(255, 82, 25, 0.6) 0%,
+      rgba(255, 82, 25, 0) 68%,
+      rgba(255, 82, 25, 0) 100%
+    );
+    z-index: 0;
+  }
 }
+
 .banner-title {
   height: 500px;
 }
@@ -33,7 +91,14 @@ h2 {
     animation: title-animation 5s infinite;
   }
 }
-
+.intro_buttons {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  .button {
+    margin-right: 20px !important;
+  }
+}
 .intro3 {
   font-weight: 500;
   color: $badge;
@@ -265,50 +330,5 @@ h2 {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .animation-5 {
-    width: 1200px !important; //////////////////////////////
-  }
-  .animation-6 {
-    width: 1200px !important; //////////////////////////////
-  }
-  .section-banner {
-    height: 765px !important;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .animation-5 {
-    width: 992px !important; //////////////////////////////
-  }
-  .animation-6 {
-    width: 992px !important; //////////////////////////////
-  }
-  .section-banner {
-    height: 1250px !important;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .animation-5 {
-    width: 768px !important; //////////////////////////////
-  }
-  .animation-6 {
-    width: 768px !important; //////////////////////////////
-  }
-  .section-banner {
-    height: 1250px !important;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .animation-5 {
-    width: 576px !important; //////////////////////////////
-  }
-  .animation-6 {
-    width: 576px !important; //////////////////////////////
-  }
-  .section-banner {
-    height: 1250px !important;
   }
 }

@@ -1,7 +1,7 @@
 @use "../custom" as *;
 @use "../components/mixins" as *;
 
-.section-priting {
+.section-pricing {
   h2 {
     text-align: center;
   }
@@ -10,7 +10,7 @@
     text-align: center;
   }
 }
-.section-priting {
+.section-pricing {
   .intro1 {
     text-align: center;
   }
@@ -108,12 +108,4 @@
 .pricing-body-content:hover {
   transform: translateX(-10px);
   transform: translateY(-10px);
-}
-@media only screen and (max-width: 1200px) {
-}
-@media only screen and (max-width: 992px) {
-}
-@media only screen and (max-width: 768px) {
-}
-@media only screen and (max-width: 576px) {
 }

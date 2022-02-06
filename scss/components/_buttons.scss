@@ -9,6 +9,10 @@ html {
   @include media-breakpoint-down(sm) {
     display: none;
   }
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
@@ -16,7 +20,6 @@ html {
   text-decoration: none;
   color: $white !important;
   height: 60px;
-  display: inline-block;
   padding: 15px 20px;
   border-radius: 10px;
   transition: all 0.5s cubic-bezier(0.9, 0.52, 1, 1) 3s;
@@ -99,7 +102,7 @@ a {
 a {
   .lbtn-2 {
     top: 300;
-    right: 0px;
+    right: 93px;
     animation: lbtn-2 3s alternate cubic-bezier(0.895, 0.03, 0.685, 0.22)
       infinite;
 
@@ -237,14 +240,60 @@ a {
 .replybtn-1:hover.replybtn-1::after {
   background-color: $orange;
 }
+.top-btn {
+  right: 1%;
+  bottom: 10%;
+  width: auto;
+  z-index: 222;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  background: 0 0;
+  transition: all 0.5s;
+  &:active {
+    pointer-events: auto;
+    bottom: 32px;
+    opacity: 1;
+  }
+  .Up-btn-cickle {
+    width: 70px;
+    height: 70px;
+    border: 5px solid blue;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    i {
+      font-size: 30px;
+      color: $orange;
+    }
+  }
+  .top-btn-text {
+    display: flex;
+    justify-content: center;
+    color: $orange !important;
+  }
+  &:hover {
+    .Up-btn-cickle {
+      border: 5px solid $orange;
 
+      i {
+        color: $blue;
+      }
+    }
+    .top-btn-text {
+      color: $blue !important;
+    }
+  }
+}
 @media only screen and (max-width: 1200px) {
   .button {
     @include media-breakpoint-down(sm) {
       display: none;
     }
 
-    font-size: 20px;
+    font-size: 18px !important;
     font-weight: 500;
 
     height: 60px;
@@ -274,7 +323,6 @@ a {
   a {
     .lbtn-2 {
       top: 300;
-      right: 0px;
 
       .title {
         font-size: 20px !important;
@@ -340,7 +388,7 @@ a {
       display: none;
     }
 
-    font-size: 20px;
+    font-size: 16px !important;
     font-weight: 500;
 
     height: 60px;
@@ -370,7 +418,6 @@ a {
   a {
     .lbtn-2 {
       top: 300;
-      right: 0px;
 
       .title {
         font-size: 20px !important;
@@ -436,11 +483,19 @@ a {
       display: none;
     }
 
-    font-size: 20px;
+    font-size: 14px !important;
     font-weight: 500;
 
     height: 60px;
 
+    padding: 15px 20px;
+    border-radius: 10px;
+  }
+  .button {
+    font-size: 20px;
+    font-weight: 500;
+    height: 60px;
+    width: 180px;
     padding: 15px 20px;
     border-radius: 10px;
   }
@@ -466,7 +521,6 @@ a {
   a {
     .lbtn-2 {
       top: 300;
-      right: 0px;
 
       .title {
         font-size: 20px !important;
@@ -528,7 +582,7 @@ a {
 }
 @media only screen and (max-width: 576px) {
   .button {
-    font-size: 20px;
+    font-size: 14px !important;
     font-weight: 500;
     height: 60px;
     padding: 12px 14px;
@@ -559,7 +613,6 @@ a {
   a {
     .lbtn-2 {
       top: 300;
-      right: 0px;
 
       .title {
         font-size: 20px !important;
@@ -618,52 +671,4 @@ a {
 
     right: 74px;
   }
-}
-
-.top-btn {
-  right: 60px;
-  bottom: 10%;
-  width: auto;
-  z-index: 222;
-  display: none;
-  cursor: pointer;
-  position: fixed;
-  background: 0 0;
-  transition: all 0.5s;
-  .Up-btn-cickle {
-    width: 100px;
-    height: 100px;
-    border: 5px solid blue;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    i {
-      font-size: 30px;
-      color: $orange;
-    }
-  }
-  .top-btn-text {
-    display: flex;
-    justify-content: center;
-    color: $orange !important;
-  }
-  &:hover {
-    .Up-btn-cickle {
-      border: 5px solid $orange;
-
-      i {
-        color: $blue;
-      }
-    }
-    .top-btn-text {
-      color: $blue !important;
-    }
-  }
-}
-.top-btn.active {
-  pointer-events: auto;
-  bottom: 32px;
-  opacity: 1;
 }

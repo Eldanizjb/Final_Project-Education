@@ -105,8 +105,6 @@
       }
     }
     .blogs-comments {
-      img {
-      }
       span {
         padding-left: 10px;
       }
@@ -129,13 +127,10 @@
       }
     }
     .customer-comment-content {
-      h3 {
-      }
       span {
         color: $blue !important;
       }
-      p {
-      }
+
       a {
         i {
           margin-left: 3px !important;
@@ -190,17 +185,4 @@
   .reply {
     width: 181px !important;
   }
-}
-
-.add-review-box {
-}
-.listing-desc-headline {
-}
-@media only screen and (max-width: 1200px) {
-}
-@media only screen and (max-width: 992px) {
-}
-@media only screen and (max-width: 768px) {
-}
-@media only screen and (max-width: 576px) {
 }

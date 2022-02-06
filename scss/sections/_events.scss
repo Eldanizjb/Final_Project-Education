@@ -18,7 +18,7 @@
     width: 200px;
     height: 100px;
     bottom: 167px;
-    right: 84px;
+    right: 183px;
     @include radius;
     animation: border-animation-full 5s 3s alternate
       cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite;
@@ -250,12 +250,4 @@
 .event-background {
   background-color: #aea4a43b;
   @include radius;
-}
-@media only screen and (max-width: 1200px) {
-}
-@media only screen and (max-width: 992px) {
-}
-@media only screen and (max-width: 768px) {
-}
-@media only screen and (max-width: 576px) {
 }

@@ -115,16 +115,16 @@
 }
 @keyframes border-animation-full {
   0% {
-    transform: translateX(-25px);
+    transform: translateX(-10px);
   }
   25% {
-    transform: translateY(50px);
+    transform: translateY(-30px);
   }
   75% {
-    transform: translateZ(-45px);
+    transform: translateZ(-35px);
   }
   100% {
-    transform: translate(50px);
+    transform: translateX(-50px);
   }
 }
 

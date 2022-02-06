@@ -1,0 +1,715 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+@media only screen and (max-width: 1200px) {
+  .section-about {
+    height: 765px !important;
+  }
+  .section-blogs {
+    padding-bottom: 50px;
+    .header-blog {
+      text-align: center;
+    }
+    .card-blogs {
+      padding: 5px;
+      @include shadow;
+
+      .blogs-date-comments {
+        .blogs-date {
+          img {
+            max-height: 50% !important;
+          }
+          p {
+            padding-left: 10px;
+            border-right: 1px solid;
+            padding-right: 25px;
+          }
+        }
+        .blogs-comments {
+          span {
+            padding-left: 10px;
+          }
+        }
+      }
+      &:hover .img-section > img {
+        transform: scale(1.035);
+        transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+      }
+      &:hover .card-body > h3 {
+        color: $orange !important;
+      }
+    }
+  }
+  .contact-img-box-second-faq {
+    background-color: blue !important;
+  }
+  .intro_buttons {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    .button {
+      margin-right: 20px !important;
+    }
+  }
+  #breadcrum {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #about {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #courses-detail {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #courses {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #courses-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #categories {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #companies {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #blog-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #instructor-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #instructor {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #instructors {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #Faq {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #programs {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #events {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #events-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #events-detail {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #testimonial {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #contact {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #pricing {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #features {
+    .container {
+      max-width: 100%;
+    }
+  }
+
+  #contact-map {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #blogs {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #subscribe {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #footer {
+    .container {
+      max-width: 100%;
+    }
+  }
+  .animation-5 {
+    width: 1200px !important;
+  }
+  .animation-6 {
+    width: 1200px !important;
+  }
+  .section-banner {
+    height: 765px !important;
+  }
+  .card-blogs .blogs-date-comments .blogs-date p {
+    padding-right: 0px;
+  }
+  .section-blogs .card-blogs .blogs-date-comments .blogs-date p {
+    padding-left: 6px;
+    border-right: 1px solid;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .section-about {
+    height: 1250px !important;
+  }
+  .contact-img-box-second-faq {
+    background-color: #ff5219 !important;
+  }
+  .section-contact {
+    height: 1450px !important;
+  }
+  .section-contact-map {
+    margin-bottom: -150px !important;
+  }
+  .card-home {
+    margin-top: 20px;
+  }
+  .featute-right {
+    display: none;
+  }
+  .section-banner {
+    height: 600px !important;
+  }
+  .intro_buttons {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    .button {
+      margin-right: 35px !important;
+    }
+  }
+  .index {
+    height: 1250px !important;
+  }
+  #breadcrum {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #about {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #courses-detail {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #courses {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #courses-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #categories {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #companies {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #blog-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #instructor-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #instructor {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #instructors {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #Faq {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #programs {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #events {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #events-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #events-detail {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #testimonial {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #contact {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #pricing {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #features {
+    .container {
+      max-width: 100%;
+    }
+  }
+
+  #contact-map {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #blogs {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #subscribe {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #footer {
+    .container {
+      max-width: 100%;
+    }
+  }
+  .animation-5 {
+    width: 992px !important;
+  }
+  .animation-6 {
+    width: 992px !important;
+  }
+  .section-banner {
+    height: 1250px !important;
+  }
+  .card-blogs .blogs-date-comments .blogs-date p {
+    padding-right: 0px;
+  }
+  .section-blogs .card-blogs .blogs-date-comments .blogs-date p {
+    padding-left: 6px;
+    border-right: 1px solid;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section-about {
+    height: 1250px !important;
+  }
+  .section-breadcrum {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    .banner-breadcrum {
+      position: absolute;
+      top: 46px;
+      z-index: 9;
+      background-color: blue;
+      color: white !important;
+      border-radius: 10px;
+      background-color: $blue;
+      ul {
+        padding: 9px 16px 0px 16px;
+        font-size: 20px;
+        li {
+          a {
+            text-transform: uppercase;
+            color: white;
+            padding-left: 9px;
+          }
+          i {
+            color: white;
+            padding-left: 9px;
+          }
+        }
+      }
+    }
+  }
+  .contact-img-box-second-faq {
+    background-color: blue !important;
+  }
+  .section-contact {
+    height: 1450px !important;
+  }
+  .section-contact-map {
+    margin-bottom: -150px !important;
+  }
+  .card-home {
+    margin-top: 20px;
+  }
+  .featute-right {
+    display: none;
+  }
+  .section-banner {
+    height: 1000px !important;
+  }
+
+  .intro_buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #breadcrum {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #about {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #courses-detail {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #courses {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #courses-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #categories {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #companies {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #blog-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #instructor-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #instructor {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #instructors {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #Faq {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #programs {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #events {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #events-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #events-detail {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #testimonial {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #contact {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #pricing {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #features {
+    .container {
+      max-width: 100%;
+    }
+  }
+
+  #contact-map {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #blogs {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #subscribe {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #footer {
+    .container {
+      max-width: 100%;
+    }
+  }
+  .animation-5 {
+    width: 768px !important;
+  }
+  .animation-6 {
+    width: 768px !important;
+  }
+  .section-banner {
+    height: 1250px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .section-about {
+    height: 1250px !important;
+  }
+  .sliderBackground {
+    width: 94% !important;
+  }
+  .contact-img-box-second-faq {
+    background-color: #ff5219 !important;
+  }
+  .section-contact {
+    height: 1450px !important;
+  }
+  .section-contact-map {
+    margin-bottom: -150px !important;
+  }
+  .card-home {
+    margin-top: 20px;
+  }
+  .featute-right {
+    display: none;
+  }
+  .section-banner {
+    height: 830px !important;
+  }
+  .intro_buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .section-breadcrum .banner-breadcrum {
+    z-index: 10;
+  }
+  #breadcrum {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #about {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #courses-detail {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #courses {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #courses-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #categories {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #companies {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #blog-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #instructor-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #instructor {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #instructors {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #Faq {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #programs {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #events {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #events-page {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #events-detail {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #testimonial {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #contact {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #pricing {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #features {
+    .container {
+      max-width: 100%;
+    }
+  }
+
+  #contact-map {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #blogs {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #subscribe {
+    .container {
+      max-width: 100%;
+    }
+  }
+  #footer {
+    .container {
+      max-width: 100%;
+    }
+  }
+  .animation-5 {
+    width: 576px !important;
+  }
+  .animation-6 {
+    width: 576px !important;
+  }
+  .section-banner {
+    height: 1250px !important;
+  }
+}

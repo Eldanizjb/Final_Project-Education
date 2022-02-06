@@ -6,6 +6,7 @@
 @use "components/mixins";
 @use "components/typography";
 @use "components/fonts";
+@use "components/responsive";
 
 //import the sections
 @use "sections/preloader";
@@ -34,4 +35,5 @@
 @use "sections/pagination";
 @use "sections/accardion";
 @use "sections/subscribe";
+@use "sections/scrollbar";
 @use "sections/footer";

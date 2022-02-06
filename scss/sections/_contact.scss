@@ -5,6 +5,9 @@
   height: 800px;
   position: relative;
   .contact-left-side {
+    position: relative;
+    display: flex;
+    justify-content: center;
     .contact-img {
       position: relative;
       a {
@@ -26,11 +29,10 @@
     }
     .contact-img-box-second-faq {
       bottom: 0;
-      left: 32px;
       position: absolute;
       background-color: blue;
-      width: 564px;
-      height: 330px;
+      width: 80%;
+      height: 50%;
       border-radius: 10px;
       z-index: -1;
     }
@@ -130,54 +132,4 @@
 
 .section-contact-map {
   margin-bottom: -100px;
-}
-@media only screen and (max-width: 1200px) {
-  .contact-img-box-second-faq {
-    left: 18px !important;
-    background-color: blue !important;
-    width: 408px !important;
-    height: 219px !important;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .contact-img-box-second-faq {
-    left: 30px !important;
-    background-color: #ff5219 !important;
-    width: 585px !important;
-    height: 360px !important;
-  }
-  .section-contact {
-    height: 1450px !important;
-  }
-  .section-contact-map {
-    margin-bottom: -150px !important;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .contact-img-box-second-faq {
-    left: 35px !important;
-    background-color: blue !important;
-    width: 448px !important;
-    height: 272px !important;
-  }
-  .section-contact {
-    height: 1450px !important;
-  }
-  .section-contact-map {
-    margin-bottom: -150px !important;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .contact-img-box-second-faq {
-    left: 32px !important;
-    background-color: #ff5219 !important;
-    width: 356px !important;
-    height: 226px !important;
-  }
-  .section-contact {
-    height: 1450px !important;
-  }
-  .section-contact-map {
-    margin-bottom: -150px !important;
-  }
 }

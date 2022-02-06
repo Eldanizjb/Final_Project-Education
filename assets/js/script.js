@@ -39,7 +39,6 @@ $(".sliderInstructors").owlCarousel({
 
 $(".slideTestimonial").owlCarousel({
   loop: true,
-  margin: 20,
   dots: true,
   autoplay: true,
   autoplayTimeout: 2000,
@@ -65,7 +64,7 @@ $(".sliderCompanies").owlCarousel({
   autoplayTimeout: 2000,
   responsive: {
     0: {
-      items: 1,
+      items: 2,
     },
     600: {
       items: 3,
@@ -74,13 +73,4 @@ $(".sliderCompanies").owlCarousel({
       items: 5,
     },
   },
-});
-
-const toTop = document.querySelector(".top-btn");
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 100) {
-    toTop.classList.add("active");
-  } else {
-    toTop.classList.remove("active");
-  }
 });

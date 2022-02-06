@@ -41,24 +41,3 @@ ul {
 .intro {
   margin-bottom: 40px;
 }
-
-@media only screen and (max-width: 1200px) {
-  .section-about {
-    height: 765px !important;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .section-about {
-    height: 1250px !important;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .section-about {
-    height: 1250px !important;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .section-about {
-    height: 1250px !important;
-  }
-}
